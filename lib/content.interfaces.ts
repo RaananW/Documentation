@@ -40,6 +40,7 @@ export interface IFullImage {
     layout: "fill";
     unsized: true;
     caption?: string;
+    unoptimized: boolean;
 }
 
 export interface ISizedImageEmbed {
@@ -50,6 +51,7 @@ export interface ISizedImageEmbed {
     layout: "fixed" | "intrinsic" | "responsive";
     unsized: true;
     caption?: string;
+    unoptimized: boolean;
 }
 
 export type IImageEmbed = IFullImage | ISizedImageEmbed;
